@@ -19,10 +19,10 @@ $result = mysqli_query($conn, $sql) or die("Bad query: $sql");
 <?php 
     if(mysqli_num_rows($result) > 0 ) {
         while ($row = mysqli_fetch_array($result)) {
-            echo " <a href='projects/details.php?project={$row['project_link']}'> {$row['project_name']} </a> <br>";
+            echo " <a href='projects/details.php?id={$row['project_link']}'> {$row['project_name']} </a> <br>";
         }      
     } else {
-        echo "Something went wrong.";
+        echo " Something went wrong";
     }
 ?>
 
