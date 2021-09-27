@@ -15,15 +15,14 @@ $result = mysqli_query($conn, $sql) or die("Bad query: $sql");
     <title>PHP Basics</title>
 </head>
 <body>
-    Hello world
 <!-- loop results from query -->
 <?php 
     if(mysqli_num_rows($result) > 0 ) {
         while ($row = mysqli_fetch_array($result)) {
-            echo " <a href='details.php?id={$row['project_link']}'> {$row['project_name']} </a> <br>";
+            echo " <a href='projects/details.php?project={$row['project_link']}'> {$row['project_name']} </a> <br>";
         }      
     } else {
-        echo " No images to display";
+        echo "Something went wrong.";
     }
 ?>
 
