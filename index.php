@@ -1,3 +1,11 @@
+<?php
+//query
+require_once 'includes/connect.php';
+
+$sql = "SELECT * FROM tbl_project";
+$result = mysqli_query($conn, $sql) or die("Bad query: $sql");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +16,17 @@
 </head>
 <body>
     Hello world
-    <ul>
-        <li><a href="details.php"></a></li>
-    </ul>
+<!-- loop results from query -->
+<?php 
+    if(mysqli_num_rows($result) > 0 ) {
+        while ($row = mysqli_fetch_array($result)) {
+            echo " <a href='details.php?id={$row['project_link']}'> {$row['project_name']} </a> <br>";
+        }      
+    } else {
+        echo " No images to display";
+    }
+?>
+
+
 </body>
 </html>

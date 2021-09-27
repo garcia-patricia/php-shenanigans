@@ -1,6 +1,7 @@
 <?php
+//query
+require_once 'includes/connect.php';
 
-require 'connect.php';
 
 ?>
 
