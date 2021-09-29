@@ -101,6 +101,17 @@ include_once 'includes/connect.php';
     }
 ?>
 
+<section id="gallery-container">
+
+<div class="project-container">
+
+
+</div>
+
+
+
+</section>
+
 <?php foreach($projects as $project): ?>
 
     <!-- view project button/link -->
