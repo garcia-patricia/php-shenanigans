@@ -28,6 +28,7 @@ include_once 'includes/connect.php';
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 999;
 }
 
 /* Modal Content */
@@ -42,7 +43,8 @@ include_once 'includes/connect.php';
     -webkit-animation-name: fadein;
     -webkit-animation-duration: 0.4s;
     animation-name: fadein;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+     z-index: 999;
 }
 
 /* Add Animation */
@@ -63,28 +65,61 @@ include_once 'includes/connect.php';
     font-size: 28px;
     font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
-
 .modal-header {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
 }
-
-.modal-body {padding: 2px 16px;}
-
+.modal-body {padding: 2px 16px; }
 .modal-footer {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
 }
 
+#gallery-container {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.proj-title  {
+    text-decoration: none;
+    opacity: 0;
+}
+.proj-title:hover{
+    display: block;
+    color: #fff;
+    opacity: 1;
+}
+.project-container {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    background-color: blue;
+    text-align: center;
+    opacity: 1;
+    transition: .2s;
+}
+.project-container:hover img {
+    opacity: .95;
+}
+.modal-button {
+    display: block;
+    height: 100%;
+    padding: 45% 0;
+    transition: .2s;
+}
+.modal-button a:hover {
+    opacity: 1;
+}
 </style>
 
 
@@ -103,17 +138,22 @@ include_once 'includes/connect.php';
 
 <section id="gallery-container">
 
+<?php foreach($projects as $project): ?>
+
 <div class="project-container">
+
+    <a class="modal-button proj-title" href="<?php echo $project['project_link'];?>">
+        <?php echo $project['project_name'];?>
+    </a>
+</div>    
+<?php endforeach; ?>
 
 
 </div>
 
-
-
 </section>
 
 <?php foreach($projects as $project): ?>
-
     <!-- view project button/link -->
     <br>
     <a class="modal-button" href="#<?php echo $project['project_link'];?>">test</a>
@@ -124,18 +164,22 @@ include_once 'includes/connect.php';
 
   <!-- Modal content -->
   <div class="modal-content">
+
     <div class="modal-header" style="background-image: url(http://i54.tinypic.com/4zuxif.jpg)" >
-      <span class="close">×</span>
-      <h2><?php echo $project['project_name'];?></h2>
+        <span class="close">×</span>
+            <h2><?php echo $project['project_name'];?></h2>
     </div>
+    
     <div class="modal-body">
       <p>Some text in the Modal Body</p>
       <p>Some other text...</p>
     </div>
+
     <div class="modal-footer">
-      <h3>Modal Footer</h3>
+        <h3>Modal Footer</h3>
     </div>
-  </div>
+
+</div>
 
 </div>
 <?php endforeach; ?>
