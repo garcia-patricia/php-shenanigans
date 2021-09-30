@@ -4,6 +4,6 @@ Testing out some PHP stuff (Pulling data, looping and passing ID through links).
 
 ### Things I would like to accomplish:
 
-* Using PDO and mysqli
-* Have pagination (Before/Next/Current) on a page
-* Pass ID/Project name through header
+* ~~Using PDO~~ and mysqli.  mysqli was used. PDO in a different/smaller project.
+* ~~Have pagination (Before/Next/Current) on a page~~ Will attempt in a smaller project.
+* ~~Pass ID/Project name through header~~ Projects loop through array and lightbox reflects what image/link was clicked.
