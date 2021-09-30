@@ -26,9 +26,12 @@ include_once 'includes/connect.php';
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: #01223770; /* Fallback color */
+    background-color: rgba(255,255,255,0.4); /* Black w/ opacity */
     z-index: 999;
+    backdrop-filter: blur(10px);
+    transition: .4s;
+    
 }
 
 /* Modal Content */
@@ -87,8 +90,8 @@ include_once 'includes/connect.php';
     display: grid;
     overflow: hidden;
     grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
 }
 .proj-title  {
     text-decoration: none;
@@ -102,11 +105,10 @@ include_once 'includes/connect.php';
 .project-container {
     display: block;
     overflow: hidden;
-    height: 100%;
-    background-color: blue;
     text-align: center;
     opacity: 1;
     transition: .2s;
+    background-color: pink;
 }
 .project-container:hover img {
     opacity: .95;
@@ -116,6 +118,7 @@ include_once 'includes/connect.php';
     height: 100%;
     padding: 45% 0;
     transition: .2s;
+    opacity: 0;
 }
 .modal-button a:hover {
     opacity: 1;
@@ -136,30 +139,19 @@ include_once 'includes/connect.php';
     }
 ?>
 
-<section id="gallery-container">
+<section id="gallery-container" >
 
 <?php foreach($projects as $project): ?>
-
 <div class="project-container">
-
-    <a class="modal-button proj-title" href="<?php echo $project['project_link'];?>">
-        <?php echo $project['project_name'];?>
+    <a class="modal-button proj-title" href="#<?php echo $project['project_link'];?>">
+            <?php echo $project['project_name'];?>
     </a>
+
 </div>    
-<?php endforeach; ?>
 
 
-</div>
 
-</section>
-
-<?php foreach($projects as $project): ?>
-    <!-- view project button/link -->
-    <br>
-    <a class="modal-button" href="#<?php echo $project['project_link'];?>">test</a>
-    <!-- <button class="modal-button" href="#<?php echo $project['project_link'];?>">Open Modal</button> -->
-    
-    <!-- The Modal -->
+<!-- modal -->
 <div id="<?php echo $project['project_link'];?>" class="modal">
 
   <!-- Modal content -->
@@ -167,61 +159,32 @@ include_once 'includes/connect.php';
 
     <div class="modal-header" style="background-image: url(http://i54.tinypic.com/4zuxif.jpg)" >
         <span class="close">×</span>
-            <h2><?php echo $project['project_name'];?></h2>
+        <h2><?php echo $project['project_name'];?></h2>
     </div>
-    
     <div class="modal-body">
-      <p>Some text in the Modal Body</p>
-      <p>Some other text...</p>
+      <p><?php echo $project['project_objective'];?></p>
+      <p><?php echo $project['project_roles'];?>.</p>
+      <p><?php echo $project['project_year'];?>.</p>
+      <p><?php echo $project['project_type'];?>.</p>
     </div>
-
     <div class="modal-footer">
-        <h3>Modal Footer</h3>
+      <h3>Modal Footer</h3>
     </div>
+  </div>
 
 </div>
 
-</div>
 <?php endforeach; ?>
 
+
+</div>
+
+</section>
+
+
+
 </body>
-<script>
 
-// Get the button that opens the modal
-var btn = document.querySelectorAll(".modal-button");
+<script src="js/lightbox.js"></script>
 
-// All page modals
-var modals = document.querySelectorAll('.modal');
-
-// Get the <span> element that closes the modal
-var spans = document.getElementsByClassName("close");
-
-// When the user clicks the button, open the modal
-for (var i = 0; i < btn.length; i++) {
- btn[i].onclick = function(e) {
-    e.preventDefault();
-    modal = document.querySelector(e.target.getAttribute("href"));
-    modal.style.display = "block";
- }
-}
-
-// When the user clicks on <span> (x), close the modal
-for (var i = 0; i < spans.length; i++) {
- spans[i].onclick = function() {
-    for (var index in modals) {
-      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
-    }
- }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
-     for (var index in modals) {
-      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
-     }
-    }
-}
-
-</script>
 </html>
