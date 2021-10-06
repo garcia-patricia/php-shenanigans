@@ -1,0 +1,75 @@
+.intro {
+  margin: 2% 2% 10% 2%;
+  overflow: hidden;
+}
+.intro-content {
+  font-size: 0.8rem;
+}
+.intro-pic {
+  width: 80%;
+  margin: 0 auto;
+}
+.intro-pic img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+}
+.hello-title {
+  text-align: center;
+  display: block;
+  font-size: 25px;
+  color: $darkblue;
+  font-weight: 600;
+  padding: 5% 0;
+}
+.intro-text {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* button */
+.btn-about {
+  margin: 0 auto;
+  height: 2.5rem;
+  text-align: center;
+  width: 8rem;
+  border-radius: 50px;
+
+  border: 3px solid $darkblue;
+}
+
+.about-link a {
+  color: grey !important;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+/* tablet */
+
+@media (min-width: 1000px) {
+  .intro {
+    margin: 0 auto 4% auto;
+    width: 80%;
+  }
+  .intro-text {
+    float: right;
+    margin: 0 auto;
+    padding-right: 8%;
+    width: 50%;
+  }
+  .intro-pic {
+    width: 40%;
+    float: left;
+    margin: 0 auto;
+  }
+  .intro-pic img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+    max-height: 350px;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}

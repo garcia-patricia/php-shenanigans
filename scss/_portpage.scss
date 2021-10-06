@@ -1,0 +1,196 @@
+.projtitle {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  line-height: 400px;
+  font-weight: 500;
+  letter-spacing: 1.12px;
+  font-family: "Playfair Display";
+  text-shadow: 1px 1px 14px #000000;
+}
+.project-name {
+  font-size: 20px !important;
+  font-weight: 700;
+  color: $darkblue;
+  text-align: center;
+}
+.project-objective-title {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+.project-views-container {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+.project-views-container img {
+  width: 100%;
+}
+.proj-header {
+  background-image: url("https://images.pexels.com/photos/2343170/pexels-photo-2343170.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  min-height: 200px;
+  display: block;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.portfolio-parallax-project {
+  background-image: url("https://images.pexels.com/photos/4622976/pexels-photo-4622976.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-info {
+  display: block;
+  padding: 10% 1% 0 1%;
+}
+.project-specifics {
+  font-size: 11px;
+  padding: 10% 3%;
+  text-align: center;
+}
+.project-specifics ul li {
+  display: inline-block;
+  text-align: center;
+}
+.project-specifics li {
+  padding-left: 20px;
+}
+
+.desc {
+  padding: 2%;
+  margin: 10% auto;
+  font-size: 12px;
+  line-height: 16px;
+}
+.project-name,
+.project-objective-title {
+  padding-left: 2%;
+  font-size: 12px;
+  line-height: 16px;
+}
+.project-objective {
+  padding: 2%;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.portfolio-closeup-PROJECTNAME img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3% 0 0 0;
+}
+
+//bottom links
+.proj-links {
+  margin: 5% 0 0 0;
+}
+.proj-links ul {
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+}
+.proj-links ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+.proj-links ul li a {
+  font-size: 11px;
+}
+.allProj {
+  padding-top: 7px;
+}
+
+@media (min-width: $tablet-width) {
+  .project-info {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project-description {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .portfolio-closeup {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .portfolio-closeup img {
+    display: block;
+    width: 100%;
+  }
+  .portfolio-parallax-project {
+    min-height: 500px;
+  }
+  .proj-header {
+    min-height: 500px;
+  }
+  .projtitle {
+    line-height: 600px;
+  }
+  .project-info {
+    display: block;
+    padding: 5% 1% 0 1%;
+  }
+  .project-specifics {
+    font-size: 10px;
+    padding: 5% 3%;
+    text-align: center;
+  }
+
+  //bottom links
+  .proj-links {
+    margin: 5% 0 0 0;
+  }
+  .proj-links ul {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .proj-links ul li {
+    font-size: 10px;
+    display: inline-block;
+    list-style-type: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .project-specifics {
+    margin: 0 auto;
+    font-size: 12px;
+    padding: 5% 0;
+  }
+  .project-description {
+    width: 60%;
+  }
+  .project-info {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .proj-header {
+    // change to tablet/desktop image
+    background-image: url("https://images.pexels.com/photos/2343170/pexels-photo-2343170.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+    min-height: 200px;
+  }
+
+  .portfolio-parallax-project {
+    // change to tablet/desktop image
+    background-image: url("https://images.pexels.com/photos/4622976/pexels-photo-4622976.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+    min-height: 200px;
+  }
+}
