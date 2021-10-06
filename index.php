@@ -15,12 +15,10 @@ include_once 'sections/main-nav.html';
 
 <body>
 
-<section id="intro-section">
-
-hi
-
-</section>
-
+<?php
+//query
+include_once 'sections/intro.php';
+?>
 
 <?php
     $sql = " SELECT * FROM tbl_project;";
