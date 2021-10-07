@@ -1,4 +1,4 @@
-.projtitle {
+.project-title-main {
   text-align: center;
   font-size: 30px;
   color: #fff;
@@ -29,7 +29,6 @@
   width: 100%;
 }
 .proj-header {
-  background-image: url("https://images.pexels.com/photos/2343170/pexels-photo-2343170.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
   min-height: 200px;
   display: block;
   background-attachment: fixed;
@@ -84,7 +83,7 @@
   line-height: 16px;
 }
 
-.portfolio-closeup-PROJECTNAME img {
+.portfolio-closeup img {
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -140,9 +139,7 @@
   .proj-header {
     min-height: 500px;
   }
-  .projtitle {
-    line-height: 600px;
-  }
+
   .project-info {
     display: block;
     padding: 5% 1% 0 1%;

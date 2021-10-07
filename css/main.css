@@ -7,15 +7,17 @@
 
 .intro-pic {
   width: 100%;
+  height: 100%;
+  border-radius: 50%;
   margin: 0 auto;
 }
 
 .intro-pic img {
-  width: 70%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
   margin: 0 auto 3% auto;
   display: block;
-  border-radius: 50%;
-  height: 350px;
 }
 
 .hello-title {
@@ -307,13 +309,13 @@
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 6.7rem;
+    top: 0;
+    height: 100vh;
     flex-direction: column;
-    background-color: #fff;
-    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 50%;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
   .nav-menu.active {
     left: 0;
@@ -325,6 +327,8 @@
   .hamburger {
     display: block;
     cursor: pointer;
+    position: relative;
+    z-index: 888;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -488,7 +492,7 @@ h1 {
   }
 }
 
-.projtitle {
+.project-title-main {
   text-align: center;
   font-size: 30px;
   color: #fff;
@@ -524,7 +528,6 @@ h1 {
 }
 
 .proj-header {
-  background-image: url("https://images.pexels.com/photos/2343170/pexels-photo-2343170.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
   min-height: 200px;
   display: block;
   background-attachment: fixed;
@@ -583,7 +586,7 @@ h1 {
   line-height: 16px;
 }
 
-.portfolio-closeup-PROJECTNAME img {
+.portfolio-closeup img {
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -641,9 +644,6 @@ h1 {
   }
   .proj-header {
     min-height: 500px;
-  }
-  .projtitle {
-    line-height: 600px;
   }
   .project-info {
     display: block;
@@ -706,7 +706,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 67%;
+  font-size: 75%;
   line-height: 20px;
   letter-spacing: 0.5px;
   color: #101235;

@@ -13,10 +13,7 @@
         </h1>
         <span class="divider-pnk"></span>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ligula metus, hendrerit quis nunc id, dignissim tempor lectus. Vivamus urna enim, posuere non tellus in, euismod semper tortor. Sed sagittis mauris ac arcu consectetur rhoncus. Sed sed eleifend risus, sed fermentum risus. Donec ultricies sem in eros mollis vulputate.
-        </p>
-        <p>
-        Morbi purus massa, lobortis at lectus in, consequat elementum elit. Maecenas eget metus bibendum, tristique justo eu, fermentum neque. Cras leo metus, vehicula eget orci non, eleifend mollis massa. Nunc imperdiet odio nec libero varius porta. Vivamus magna est, commodo eget lacus et, maximus luctus est. 
+Hi there! I'm Patricia (Trish works too!). It's nice to meet you, welcome to my little corner of the internet. I am a graphic designer and front-end web developer. I enjoy finding creative solutions to problems. I find joy in designing clean solutions for every day tasks.<br><br> When I'm not designing or learning coding - I wind down by creating illustrations or re-watching sitcom classics. If you're interested in learning more about me and my design background you can click that big ol' button down there - enjoy!   </p>
         </p>
     
 

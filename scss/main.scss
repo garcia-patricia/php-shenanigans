@@ -5,7 +5,7 @@
 @import "_header.scss";
 @import "_footer.scss";
 @import "_portfolio.scss";
-@import "_portpage.scss";
+@import "_port-page.scss";
 
 // ------------------- global
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap");
@@ -23,7 +23,7 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 67%;
+  font-size: 75%;
   line-height: 20px;
   letter-spacing: 0.5px;
   color: $darkblue;
