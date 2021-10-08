@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Poppins:wght@200;500&display=swap");
 .intro {
   margin: 5% 2%;
   height: 100vh;
@@ -22,11 +22,14 @@
 
 .hello-title {
   text-align: center;
+  letter-spacing: 1.5px;
   display: block;
   font-size: 25px;
   color: #101235;
   font-weight: 600;
-  line-height: 35px;
+  width: 90%;
+  line-height: 28px;
+  margin: 0 auto 5%;
 }
 
 .intro-text {
@@ -290,7 +293,7 @@
   font-size: 0.8rem;
   letter-spacing: 1.5px;
   font-weight: 400;
-  color: #101235;
+  color: #0e1228;
   text-transform: uppercase;
   transition: 0.3s;
 }
@@ -342,7 +345,7 @@
 }
 
 footer {
-  background: #101235;
+  background: #0e1228;
   padding: 7% 2%;
   margin-top: 5%;
 }
@@ -506,7 +509,7 @@ h1 {
 .project-name {
   font-size: 20px !important;
   font-weight: 700;
-  color: #101235;
+  color: #0e1228;
   text-align: center;
 }
 
@@ -709,9 +712,8 @@ body {
   font-size: 75%;
   line-height: 20px;
   letter-spacing: 0.5px;
-  color: #101235;
+  color: #0e1228;
   font-weight: 300;
-  background-color: indigo;
   background-color: #f3f3f3;
   transition: opacity 2s;
 }
@@ -732,10 +734,15 @@ a {
 
 h1 {
   font-family: "Playfair Display", serif;
+  font-weight: 800;
 }
 
 .bold {
   font-weight: 500;
+}
+
+.underline {
+  background-image: linear-gradient(0deg, #93ffe2 35%, transparent 35%);
 }
 
 .right {

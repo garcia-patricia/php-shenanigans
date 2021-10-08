@@ -4,20 +4,17 @@ include_once 'includes/connect.php';
 ?>
 
 <?php
-//query
-include_once 'sections/header.php';
+include_once 'sections/header.html';
 ?>
 
 <?php
-//query
 include_once 'sections/main-nav.html';
 ?>
 
 <body>
 
 <?php
-//query
-include_once 'sections/intro.php';
+include_once 'sections/intro.html';
 ?>
 
 <?php
@@ -70,6 +67,9 @@ include_once 'sections/intro.php';
 
 
 
+<?php
+include_once 'sections/footer.php';
+?>
 
 
 </body>
