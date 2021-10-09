@@ -6,5 +6,5 @@
         <li></li>
     </ul>
 
-    <?php  echo date("Y") ?>
+    <?php  echo date("Y")?>
 </footer>

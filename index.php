@@ -2,20 +2,22 @@
 //query
 include_once 'includes/connect.php';
 ?>
-
 <?php
 include_once 'sections/header.html';
 ?>
-
 <?php
 include_once 'sections/main-nav.html';
 ?>
 
+<!-- begin content -->
 <body>
+
 
 <?php
 include_once 'sections/intro.html';
-?>
+?>  
+
+
 
 <?php
     $sql = " SELECT * FROM tbl_project;";
@@ -34,7 +36,8 @@ include_once 'sections/intro.html';
 <?php foreach($projects as $project): ?>
 <div class="project-container" style="background-image: url(img/<?php echo $project['project_thumbnail'];?>)">
     <a class="modal-button proj-title" href="#<?php echo $project['project_link'];?>">
-            <?php echo $project['project_name'];?>
+            <?php echo $project['project_name'];?><br>
+            
     </a>
 
 </div>    

@@ -4,16 +4,30 @@
       <img src="././img/logo-main-white.svg" alt="" />
     </a>
     <ul class="nav-menu">
-      <li class="nav-item">
+      <li class="nav-item-main">
         <a href="index.php" class="nav-link">Home</a>
       </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Portfolio</a>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Dropdown link (Projects)
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">project 1</a>
+          <a class="dropdown-item" href="#">project 2</a>
+          <a class="dropdown-item" href="#">project 3</a>
+        </div>
       </li>
-      <li class="nav-item">
-        <a href="sections/about.php" class="nav-link">About</a>
+      <li class="nav-item-main">
+        <a href="index.php?page=/sections/about.php" class="nav-link">About</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item-main">
         <a href="#" class="nav-link">Contact</a>
       </li>
     </ul>

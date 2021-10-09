@@ -190,6 +190,7 @@
 
 /*----------------- GALLERY SECTION ---------------*/
 #gallery-container {
+  padding: 1%;
   display: grid;
   overflow: hidden;
   grid-template-columns: 1fr;
@@ -198,33 +199,38 @@
 }
 
 .proj-title {
+  font-family: "Playfair Display", serif;
   text-decoration: none;
   opacity: 0;
+  color: #fff;
 }
 
 .proj-title:hover {
-  display: block;
-  color: #fff;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 30px;
+  color: #0e1228;
   opacity: 1;
+  background-color: #8effe181;
 }
 
 .project-container {
-  min-height: 50em;
-  display: block;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
   overflow: hidden;
   text-align: center;
   opacity: 1;
-  transition: 0.2s;
+  transition: 0.1s;
   background-color: pink;
-}
-
-.project-container:hover img {
-  opacity: 0.95;
 }
 
 .modal-button {
   display: block;
-  height: 100%;
+  height: 90%;
+  margin: auto;
+  width: 96%;
   padding: 45% 0;
   transition: 0.2s;
   opacity: 0;
