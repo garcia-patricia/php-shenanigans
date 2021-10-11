@@ -1,3 +1,14 @@
+<? 
+$page = (empty($_GET["page"])) ? "home" : $_GET["page"];
+$page = "sections/".basename($page).".php"; 
+if (is_readable($page)) { 
+  include($page); 
+} else {
+  header("HTTP/1.0 404 Not Found"); 
+  exit;  
+} 
+?>
+
 <?php
 //query
 include_once 'includes/connect.php';
@@ -16,7 +27,6 @@ include_once 'sections/main-nav.html';
 <?php
 include_once 'sections/intro.html';
 ?>  
-
 
 
 <?php
