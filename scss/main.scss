@@ -43,7 +43,13 @@ body {
 a {
   text-decoration: none;
 }
-
+.wrapper {
+  background-color: pink;
+  width: 96%;
+  padding: 2%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
 // ------------------- headers & font style
 
 h1 {

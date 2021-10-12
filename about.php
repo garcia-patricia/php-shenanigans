@@ -12,9 +12,10 @@ include_once 'sections/main-nav.html';
 <!-- begin content -->
 <body>
 
-
+<div class="wrapper">
+<!-- wrapper begins -->
 <section id="about">
-        <h1 class="about-me-header">About Me</h1>
+        <h1 class="hello-title">About Me</h1>
         <div class="intro-changing-text">
 <h3 class="about-title">
         <?php 
@@ -29,8 +30,20 @@ include_once 'sections/main-nav.html';
         </a>
 </section>
 
+Title ideas (inspired by buzzfeed) .
+Cool And Random Facts About Me That Happen To Be True
+
+10 Arguably true Facts About Me
+
+10 Facts About Me That Reveal How Old I Am
+
+9 Facts And A Lie. (Just kidding, they're all true)
+
+10 Facts About me That Tells You Which Type of Bread I am.
+
+Read These Facts To Find out What Pizza I am.
 <section id="about-facts">
-        <h1 class="about-me-facts-title">Some Fun facts</h1>
+        <h1 class="hello-title">Some Fun facts</h1>
         <div class="about-fact-box">
                 <img src="img/about-fact-heart.jpg" alt="About fact detail">
                 <p class="about-fact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend ex hendrerit elementum tristique. Sed at ultrices lacus. Donec a nibh velit. Morbi egestas magna nunc, quis gravida mi ornare quis. Donec id nulla dui. </p>
@@ -38,8 +51,12 @@ include_once 'sections/main-nav.html';
 </section>
 
 
+<!-- wrapper ends -->
+</div>
+
+
 <section id="about-me-cta">
-        <h1 class="about-me-facts-title">Interested in working together?</h1>
+        <h1 class="hello-title">Interested in working together?</h1>
         <div class="about-fact-box">
                 <p class="about-fact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend ex hendrerit elementum tristique. Sed at ultrices lacus. Donec a nibh velit. Morbi egestas magna nunc, quis gravida mi ornare quis. Donec id nulla dui. </p>
                 <a href="about.php" class="btn-about-link">
@@ -47,6 +64,8 @@ include_once 'sections/main-nav.html';
         </a>
         </div>
 </section>
+
+
 <?php
 include_once 'sections/footer.php';
 ?>
