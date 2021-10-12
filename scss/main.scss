@@ -6,6 +6,7 @@
 @import "_footer.scss";
 @import "_portfolio.scss";
 @import "_port-page.scss";
+@import "_about-page.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Poppins:wght@200;500&display=swap");
 
@@ -45,7 +46,7 @@ a {
 }
 .wrapper {
   background-color: pink;
-  width: 96%;
+  width: 98%;
   padding: 2%;
   max-width: 1080px;
   margin: 0 auto;

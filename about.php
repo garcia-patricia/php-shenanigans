@@ -30,7 +30,7 @@ include_once 'sections/main-nav.html';
         </a>
 </section>
 
-Title ideas (inspired by buzzfeed) .
+Title ideas (inspired by buzzfeed) <br><br>
 Cool And Random Facts About Me That Happen To Be True
 
 10 Arguably true Facts About Me
