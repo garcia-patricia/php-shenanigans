@@ -30,24 +30,52 @@ include_once 'sections/main-nav.html';
         </a>
 </section>
 
-Title ideas (inspired by buzzfeed) <br><br>
-Cool And Random Facts About Me That Happen To Be True
 
-10 Arguably true Facts About Me
 
-10 Facts About Me That Reveal How Old I Am
 
-9 Facts And A Lie. (Just kidding, they're all true)
 
-10 Facts About me That Tells You Which Type of Bread I am.
+<section id="about-facts" class="group">
+        <h1 class="hello-title"><?php 
+        $items = Array( 'Cool And Random Facts About Me That Happen To Be True.','7 Arguably true Facts About Me.','7 Facts About Me That Reveal How Old I Am.','9 Facts And A Lie. (Just kidding, they&apos;re all true)', '10 Facts About me That Tells You Which Type of Bread I am.','Read These Wacky Facts To Find Out What My Favourite Pizza Topping Is.');
+        echo $items[array_rand($items)]; ?></h1>
 
-Read These Facts To Find out What Pizza I am.
-<section id="about-facts">
-        <h1 class="hello-title">Some Fun facts</h1>
         <div class="about-fact-box">
                 <img src="img/about-fact-heart.jpg" alt="About fact detail">
-                <p class="about-fact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend ex hendrerit elementum tristique. Sed at ultrices lacus. Donec a nibh velit. Morbi egestas magna nunc, quis gravida mi ornare quis. Donec id nulla dui. </p>
+                <p class="about-fact-text">My favourite shows are Community, Futurama, Scrubs &amp; Bojack Horseman. </p>
         </div>
+        <div class="about-fact-box">
+                <img src="img/about-fact-heart.jpg" alt="About fact detail">
+                <p class="about-fact-text">I love learning about the animation process and hope to one day create my own mini-animation!</p>
+        </div>
+        <div class="about-fact-box">
+                <img src="img/about-fact-heart.jpg" alt="About fact detail">
+                <p class="about-fact-text">I own a weaponized fruit, Mango. She's a lovebird. </p>
+        </div>
+        <div class="about-fact-box">
+                <img src="img/about-fact-heart.jpg" alt="About fact detail">
+                <p class="about-fact-text">My favourite colours are teal pink and grey! </p>
+        </div>
+        <div class="about-fact-box">
+                <img src="img/about-fact-heart.jpg" alt="About fact detail">
+                <p class="about-fact-text">I am a firm believer that pineapple belongs on pizza.</p>
+        </div>
+        <div class="about-fact-box">
+                <img src="img/about-fact-heart.jpg" alt="About fact detail">
+                <p class="about-fact-text"> Sushi with loved ones can remedy any sadness! </p>
+        </div>
+        <div class="about-fact-box">
+                <img src="img/about-fact-heart.jpg" alt="About fact detail">
+                <p class="about-fact-text"> I opened my own small business &amp; I hope to do more conventions one day! </p>
+        </div>
+        <div class="about-fact-box">
+                <img src="img/about-fact-heart.jpg" alt="About fact detail">
+                <p class="about-fact-text"> I have no preference for Mac or PC. </p>
+        </div>
+        <div class="about-fact-box">
+                <img src="img/about-fact-heart.jpg" alt="About fact detail">
+                <p class="about-fact-text"> I love Nintendo games. (Pokemon, Zelda and Animal Crossing are my favourites) </p>
+        </div>
+
 </section>
 
 
@@ -56,13 +84,16 @@ Read These Facts To Find out What Pizza I am.
 
 
 <section id="about-me-cta">
+<div class="wrapper">
         <h1 class="hello-title">Interested in working together?</h1>
-        <div class="about-fact-box">
+        <div class="about-cta-box">
                 <p class="about-fact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend ex hendrerit elementum tristique. Sed at ultrices lacus. Donec a nibh velit. Morbi egestas magna nunc, quis gravida mi ornare quis. Donec id nulla dui. </p>
                 <a href="about.php" class="btn-about-link">
             <div class="about-btn ">contact</div>
         </a>
         </div>
+</div>
+
 </section>
 
 

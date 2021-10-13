@@ -701,8 +701,23 @@ h1 {
   }
 }
 
-#about {
-  background-color: blanchedalmond;
+.about-fact-box {
+  display: grid;
+  width: 125px;
+  float: left;
+  margin: 1%;
+  height: 125px;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+#about-me-cta {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  background-color: #eeeeee;
+  padding: 3%;
 }
 
 * {
@@ -743,7 +758,6 @@ a {
 }
 
 .wrapper {
-  background-color: pink;
   width: 98%;
   padding: 2%;
   max-width: 1080px;
