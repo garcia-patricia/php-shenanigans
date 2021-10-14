@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Poppins:wght@200;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Poppins:wght@200;400;500&display=swap");
 .intro {
   margin: 5% 2%;
   height: 100vh;
@@ -29,7 +29,7 @@
   font-weight: 600;
   width: 90%;
   line-height: 28px;
-  margin: 0 auto 5%;
+  margin: 0 auto;
 }
 
 .intro-text {
@@ -701,9 +701,46 @@ h1 {
   }
 }
 
+.about-title {
+  text-align: center;
+  font-style: italic;
+}
+
 .about-photo-intro {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.about-photo {
+  display: flex;
+  width: 100%;
+  margin: 5% 0;
+}
+
+.about-photo img {
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.humble-beginnings {
+  margin: 5% 0;
+  padding: 5% 0;
+  background-color: #eeeeee;
+}
+
+.humble-beginnings-container {
+  display: grid;
+  grid-template-columns: 55% auto;
+  column-gap: 10px;
+}
+
+.humble-photo-container {
+  width: 100%;
+}
+
+.humble-beginnings-container img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 .about-fact-box {
@@ -712,7 +749,7 @@ h1 {
   text-align: center;
   position: relative;
   margin: 2%;
-  background-color: #eaeaea;
+  background-color: #edebe2;
   border-radius: 10px;
   height: 100px;
   padding: 10px;
@@ -758,10 +795,10 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 75%;
-  line-height: 20px;
+  line-height: 25px;
   letter-spacing: 0.5px;
   color: #0e1228;
-  font-weight: 300;
+  font-weight: 400;
   background-color: #f3f3f3;
   transition: opacity 2s;
 }
@@ -826,11 +863,11 @@ h1 {
   color: black;
 }
 
-.divider-pnk {
+.divider {
   height: 3px;
   background-color: #4df0c4;
   display: block;
   width: 30px;
-  margin: 2% auto 5% auto;
+  margin: 5% auto;
 }
 /*# sourceMappingURL=main.css.map */

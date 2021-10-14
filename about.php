@@ -13,6 +13,7 @@ include_once 'sections/header.html';
 <!-- wrapper begins -->
 <section id="about">
         <h1 class="hello-title">About Me</h1>
+        <span class="divider"></span>
         <div class="intro-changing-text">
 <h3 class="about-title">
         <?php 
@@ -20,15 +21,16 @@ include_once 'sections/header.html';
         echo $items[array_rand($items)]; ?>
 </h3>
         </div>
+                <div class="about-photo">
+                <img src="img/temp-logo.png" alt="About me!">
+        </div>
         <section class="about-photo-intro">
         <div class="about-text">
                 Small about me blurb.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend ex hendrerit elementum tristique. Sed at ultrices lacus. Donec a nibh velit. Morbi egestas magna nunc, quis gravida mi ornare quis. Donec id nulla dui. Vivamus mollis euismod nisi, a consequat urna ullamcorper sed. Aenean ultricies fringilla orci, vel fringilla tortor accumsan hendrerit. Integer eu neque vitae risus dignissim posuere in quis turpis. Morbi vel consequat neque.
         </div>
 
-        <div class="about-photo">
-                <img src="img/about-me.jpg" alt="About me!">
-        </div>
-        
+
+
         <a href="about.php" class="btn-about-link">
             <div class="about-btn ">RESUME</div>
         </a>
@@ -37,7 +39,22 @@ include_once 'sections/header.html';
        
 </section>
 
+<section class="humble-beginnings">
+        <h1 class="hello-title">How I got Started</h1>
+        <span class="divider"></span>
 
+        <div class="humble-beginnings-container">
+
+        <div class="about-text">
+                Small about me blurb.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend ex hendrerit elementum tristique. Sed at ultrices lacus. Donec a nibh velit. Morbi egestas magna nunc, quis gravida mi ornare quis. Donec id nulla dui. Vivamus mollis euismod nisi, a consequat urna ullamcorper sed. Aenean ultricies fringilla orci, vel fringilla tortor accumsan hendrerit. Integer eu neque vitae risus dignissim posuere in quis turpis. Morbi vel consequat neque.
+        </div>
+        <div class="humble-photo-container">
+                <img src="img/temp-logo.png" alt="About me!">
+        </div>
+
+        </div>
+
+</section>
 
 
 
@@ -45,6 +62,9 @@ include_once 'sections/header.html';
         <h1 class="hello-title"><?php 
         $items = Array( 'Cool And Random Facts About Me That Happen To Be True.','9 Arguably true Facts About Me.','9 Facts About Me That Reveal How Old I Am.','9 Facts And A Lie. (Just kidding, they&apos;re all true)', '9 Facts About me That Tells You Which Type of Bread I am.');
         echo $items[array_rand($items)]; ?></h1>
+
+<span class="divider"></span>
+
 <div class="facts-container">
         <div class="about-fact-box">
                <span class="heart-float">
@@ -55,7 +75,7 @@ include_once 'sections/header.html';
         <div class="about-fact-box">
                 <span class="heart-float">
                        <img src="img/hearty.svg" alt="A little thing I love! - THING HERE PLS EDIT." class="heart-fact">
-                </span>                <p class="about-fact-text">I love learning about the animation process and hope to one day create my own mini-animation!</p>
+                </span>                <p class="about-fact-text">I love traditional animation - Spirited Away is my favourite animated movie.</p>
         </div>
         <div class="about-fact-box">
                 <span class="heart-float">
@@ -71,11 +91,6 @@ include_once 'sections/header.html';
                 <span class="heart-float">
                        <img src="img/hearty.svg" alt="A little thing I love! - THING HERE PLS EDIT." class="heart-fact">
                 </span>                <p class="about-fact-text">I am a firm believer that pineapple belongs on pizza.</p>
-        </div>
-        <div class="about-fact-box">
-                <span class="heart-float">
-                       <img src="img/hearty.svg" alt="A little thing I love! - THING HERE PLS EDIT." class="heart-fact">
-                </span>                <p class="about-fact-text"> Sushi with loved ones can remedy any sadness! </p>
         </div>
         <div class="about-fact-box">
                 <span class="heart-float">
@@ -106,6 +121,7 @@ include_once 'sections/header.html';
 <section id="about-me-cta">
 <div class="wrapper">
         <h1 class="hello-title">Interested in working together?</h1>
+        <span class="divider"></span>
         <div class="about-cta-box">
                 <p class="about-fact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend ex hendrerit elementum tristique. Sed at ultrices lacus. Donec a nibh velit. Morbi egestas magna nunc, quis gravida mi ornare quis. Donec id nulla dui. </p>
                 <a href="about.php" class="btn-about-link">
