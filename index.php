@@ -20,7 +20,6 @@ include_once 'sections/header.html';
 <!-- begin content -->
 <body>
 
-
 <?php
 include_once 'sections/intro.html';
 ?>  
