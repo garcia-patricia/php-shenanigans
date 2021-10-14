@@ -701,6 +701,11 @@ h1 {
   }
 }
 
+.about-photo-intro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
 .about-fact-box {
   display: flex;
   align-items: center;
@@ -713,18 +718,13 @@ h1 {
   padding: 10px;
 }
 
-.big-heart {
-  font-size: 27px;
-  color: #f42f67;
-}
-
 .heart-float {
   text-align: center;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   display: block;
   position: absolute;
-  top: -15px;
+  top: -20px;
   left: 45%;
 }
 
@@ -738,6 +738,8 @@ h1 {
 
 .facts-container {
   display: grid;
+  row-gap: 15px;
+  column-gap: 10px;
   grid-template-columns: 1fr 1fr;
 }
 
