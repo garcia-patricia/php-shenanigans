@@ -16,9 +16,6 @@ include_once 'includes/connect.php';
 <?php
 include_once 'sections/header.html';
 ?>
-<?php
-include_once 'sections/main-nav.html';
-?>
 
 <!-- begin content -->
 <body>

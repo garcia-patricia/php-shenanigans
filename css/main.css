@@ -702,14 +702,30 @@ h1 {
 }
 
 .about-fact-box {
-  display: grid;
-  width: 125px;
-  float: left;
-  margin: 1%;
-  height: 125px;
-  background-color: #e7e7e7;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin: 2%;
+  background-color: #eaeaea;
   border-radius: 10px;
-  padding: 1%;
+  height: 100px;
+  padding: 10px;
+}
+
+.big-heart {
+  font-size: 27px;
+  color: #f42f67;
+}
+
+.heart-float {
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  display: block;
+  position: absolute;
+  top: -15px;
+  left: 45%;
 }
 
 #about-me-cta {
@@ -718,6 +734,11 @@ h1 {
   align-self: center;
   background-color: #eeeeee;
   padding: 3%;
+}
+
+.facts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 * {

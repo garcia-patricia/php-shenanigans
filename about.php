@@ -5,9 +5,6 @@ include_once 'includes/connect.php';
 <?php
 include_once 'sections/header.html';
 ?>
-<?php
-include_once 'sections/main-nav.html';
-?>
 
 <!-- begin content -->
 <body>
@@ -38,9 +35,11 @@ include_once 'sections/main-nav.html';
         <h1 class="hello-title"><?php 
         $items = Array( 'Cool And Random Facts About Me That Happen To Be True.','7 Arguably true Facts About Me.','7 Facts About Me That Reveal How Old I Am.','9 Facts And A Lie. (Just kidding, they&apos;re all true)', '10 Facts About me That Tells You Which Type of Bread I am.','Read These Wacky Facts To Find Out What My Favourite Pizza Topping Is.');
         echo $items[array_rand($items)]; ?></h1>
-
+<div class="facts-container">
         <div class="about-fact-box">
-                <img src="img/about-fact-heart.jpg" alt="About fact detail">
+                <span class="heart-float">
+                        <i class="fas fa-heart big-heart"></i>
+                </span>
                 <p class="about-fact-text">My favourite shows are Community, Futurama, Scrubs &amp; Bojack Horseman. </p>
         </div>
         <div class="about-fact-box">
@@ -75,6 +74,9 @@ include_once 'sections/main-nav.html';
                 <img src="img/about-fact-heart.jpg" alt="About fact detail">
                 <p class="about-fact-text"> I love Nintendo games. (Pokemon, Zelda and Animal Crossing are my favourites) </p>
         </div>
+
+</div>
+
 
 </section>
 
