@@ -77,10 +77,12 @@
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;
-  min-height: 30em;
+  min-height: 22em;
 }
 .modal-body {
-  padding: 2px 16px;
+  padding: 3% 0 5% 0;
+  overflow: auto;
+  position: relative;
 }
 .modal-footer {
   padding: 2px 16px;
@@ -143,4 +145,38 @@
 }
 .project-views img {
   width: 100%;
+}
+
+.project-modal-title {
+  font-family: "Playfair Display";
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 26px;
+  padding: 3% 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-modal-text {
+  width: 60%;
+  float: left;
+  padding: 1%;
+}
+
+.btn-container {
+  padding-top: 3%;
+}
+.btn-container-modal {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+}
+.modal-project-tools {
+  width: 100%;
+  display: block;
+  margin-top: 5%;
+  padding: 3% 1% 0 1%;
+  float: left;
+  border-top: dotted 2px #e1e1e1;
 }

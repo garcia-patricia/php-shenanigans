@@ -6,9 +6,10 @@
 @import "_footer.scss";
 @import "_portfolio.scss";
 @import "_port-page.scss";
+@import "_project-details.scss";
 @import "_about-page.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Poppins:wght@200;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Poppins:wght@200;400;500;600;700&display=swap");
 
 // ------------------- global
 * {
@@ -71,23 +72,24 @@ h1 {
 .left {
   float: left;
 }
+.center {
+  margin: 0 auto;
+}
+.group:before,
 .group:after {
   content: "";
   display: table;
+}
+.group:after {
   clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 
 // ------------------- intro text
-.about-main {
-  text-align: center;
-  display: none;
-}
-.content-container {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  color: black;
-}
+
+// --------------- elements
 
 .divider {
   height: 3px;
@@ -95,4 +97,43 @@ h1 {
   display: block;
   width: 30px;
   margin: 5% auto;
+}
+
+.main-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  border-radius: 4em;
+  border: 4px solid #6e30ff;
+  border-image-slice: 1;
+  transition: 0.3s;
+}
+
+.main-btn-link,
+.btn-view-modal {
+  color: #6e30ff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-size: 12px;
+  display: inline-block;
+}
+.main-btn-link {
+  width: 25%;
+}
+.main-btn:hover {
+  background-color: #ff316c;
+  border: 0px solid #ff316c;
+}
+.main-btn-link:hover,
+.btn-view-modal:hover {
+  color: #fff;
+}
+
+.btn-view-modal {
+  width: 75%;
 }

@@ -1,22 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Poppins:wght@200;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Poppins:wght@200;400;500;600;700&display=swap");
 .intro {
-  margin: 5% 2%;
-  height: 100vh;
+  margin: 5% 2% 0 2%;
   overflow: hidden;
 }
 
 .intro-pic {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  margin: 0 auto;
+  margin: 0 auto 3% auto;
 }
 
 .intro-pic img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 220px;
   border-radius: 50%;
-  margin: 0 auto 3% auto;
+  margin: 0 auto;
   display: block;
 }
 
@@ -38,37 +36,10 @@
   display: block;
 }
 
-/* about btn */
-.about-btn {
+.btn-intro-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 30%;
-  text-align: center;
-  height: 50px;
-  margin: 3% auto;
-  border-radius: 4em;
-  border: 4px solid #6e30ff;
-  border-image-slice: 1;
-  transition: 0.3s;
-}
-
-.btn-about-link {
-  color: #6e30ff;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-decoration: none;
-  font-size: 12px;
-}
-
-.about-btn:hover {
-  background-color: #ff316c;
-  border: 0px solid #ff316c;
-}
-
-.btn-about-link:hover {
-  color: #fff;
+  margin: 5% 0;
 }
 
 /* tablet */
@@ -175,11 +146,13 @@
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;
-  min-height: 30em;
+  min-height: 22em;
 }
 
 .modal-body {
-  padding: 2px 16px;
+  padding: 3% 0 5% 0;
+  overflow: auto;
+  position: relative;
 }
 
 .modal-footer {
@@ -247,6 +220,43 @@
 
 .project-views img {
   width: 100%;
+}
+
+.project-modal-title {
+  font-family: "Playfair Display";
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 26px;
+  padding: 3% 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-modal-text {
+  width: 60%;
+  float: left;
+  padding: 1%;
+}
+
+.btn-container {
+  padding-top: 3%;
+}
+
+.btn-container-modal {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+}
+
+.modal-project-tools {
+  width: 100%;
+  display: block;
+  margin-top: 5%;
+  padding: 3% 1% 0 1%;
+  float: left;
+  border-top: dotted 2px #e1e1e1;
 }
 
 .nav-logo img {
@@ -701,6 +711,66 @@ h1 {
   }
 }
 
+.proj-header-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  background-color: pink;
+}
+
+.project-details-page-title {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1.12px;
+  font-family: "Playfair Display";
+  text-shadow: 1px 1px 10px #000000;
+}
+
+.proj-details-info-container {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-gap: 15px;
+}
+
+.details-title,
+.overview-title {
+  font-size: 11px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1.1px;
+  padding-bottom: 20px;
+}
+
+.details-list-small-title {
+  display: block;
+}
+
+.details-sm-divider {
+  margin: 10px 0 20px 0;
+  display: block;
+  width: 20%;
+  height: 0.2em;
+  background-color: #0e1228;
+}
+
+.details-list {
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.details-list li {
+  margin: 10% 0;
+}
+
+.proj-details-result {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-title {
   text-align: center;
   font-style: italic;
@@ -849,22 +919,23 @@ h1 {
   float: left;
 }
 
+.center {
+  margin: 0 auto;
+}
+
+.group:before,
 .group:after {
   content: "";
   display: table;
+}
+
+.group:after {
   clear: both;
 }
 
-.about-main {
-  text-align: center;
-  display: none;
-}
-
-.content-container {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  color: black;
+.group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
 }
 
 .divider {
@@ -873,5 +944,47 @@ h1 {
   display: block;
   width: 30px;
   margin: 5% auto;
+}
+
+.main-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  border-radius: 4em;
+  border: 4px solid #6e30ff;
+  border-image-slice: 1;
+  transition: 0.3s;
+}
+
+.main-btn-link,
+.btn-view-modal {
+  color: #6e30ff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.main-btn-link {
+  width: 25%;
+}
+
+.main-btn:hover {
+  background-color: #ff316c;
+  border: 0px solid #ff316c;
+}
+
+.main-btn-link:hover,
+.btn-view-modal:hover {
+  color: #fff;
+}
+
+.btn-view-modal {
+  width: 75%;
 }
 /*# sourceMappingURL=main.css.map */

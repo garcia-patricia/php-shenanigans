@@ -127,9 +127,10 @@ include_once 'sections/header.html';
         <span class="divider"></span>
         <div class="about-cta-box">
                 <p class="about-fact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend ex hendrerit elementum tristique. Sed at ultrices lacus. Donec a nibh velit. Morbi egestas magna nunc, quis gravida mi ornare quis. Donec id nulla dui. </p>
-                <a href="about.php" class="btn-about-link">
-            <div class="about-btn ">contact</div>
-        </a>
+               <div class="btn-intro-container">
+        <a href="about.php" class="main-btn-link">
+          <div class="main-btn">contact</div></a
+        >
         </div>
 </div>
 

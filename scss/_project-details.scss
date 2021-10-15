@@ -1,0 +1,51 @@
+.proj-header-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  background-color: pink;
+}
+.project-details-page-title {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1.12px;
+  font-family: "Playfair Display";
+  text-shadow: 1px 1px 10px #000000;
+}
+.proj-details-info-container {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-gap: 15px;
+}
+.details-title,
+.overview-title {
+  font-size: 11px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1.1px;
+  padding-bottom: 20px;
+}
+.details-list-small-title {
+  display: block;
+}
+.details-sm-divider {
+  margin: 10px 0 20px 0;
+  display: block;
+  width: 20%;
+  height: 0.2em;
+  background-color: $darkblue;
+}
+.details-list {
+  font-size: 11px;
+  line-height: 13px;
+}
+.details-list li {
+  margin: 10% 0;
+}
+.proj-details-result {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
