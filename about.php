@@ -36,10 +36,13 @@ include_once 'sections/header.html';
         </a>
 
         </section>
-       
 </section>
+<!-- wrapper ends -->
+</div>
 
 <section class="humble-beginnings">
+        <div class="wrapper">
+<!-- wrapper begins -->
         <h1 class="hello-title">How I got Started</h1>
         <span class="divider"></span>
 
@@ -53,7 +56,8 @@ include_once 'sections/header.html';
         </div>
 
         </div>
-
+<!-- wrapper ends -->
+</div>
 </section>
 
 
@@ -114,8 +118,7 @@ include_once 'sections/header.html';
 </section>
 
 
-<!-- wrapper ends -->
-</div>
+
 
 
 <section id="about-me-cta">

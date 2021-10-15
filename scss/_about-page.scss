@@ -13,6 +13,7 @@
 }
 .about-photo img {
   margin: 0 auto;
+  width: 30%;
   border-radius: 50%;
 }
 .humble-beginnings {
@@ -22,11 +23,11 @@
 }
 .humble-beginnings-container {
   display: grid;
-  grid-template-columns: 55% auto;
+  grid-template-columns: 65% auto;
   column-gap: 10px;
 }
 .humble-photo-container {
-  width: 100%;
+  width: 10 ````````````````````````````````0%;
 }
 .humble-beginnings-container img {
   width: 100%;
@@ -39,10 +40,13 @@
   text-align: center;
   position: relative;
   margin: 2%;
-  background-color: #edebe2;
+  background-color: #eeeeee;
   border-radius: 10px;
   height: 100px;
   padding: 10px;
+  -webkit-filter: drop-shadow(0 3px 1px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0 2px 2px #d1d1d1);
+  /* Similar syntax to box-shadow */
 }
 .heart-float {
   text-align: center;
@@ -58,7 +62,8 @@
   align-items: center;
   align-self: center;
   background-color: #eeeeee;
-  padding: 3%;
+  margin: 5% 0;
+  padding: 5% 0;
 }
 .facts-container {
   display: grid;
