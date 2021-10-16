@@ -711,6 +711,10 @@ h1 {
   }
 }
 
+.proj-details-overview {
+  padding: 7% 0;
+}
+
 .proj-header-image {
   display: flex;
   align-items: center;
@@ -764,11 +768,33 @@ h1 {
   margin: 10% 0;
 }
 
+.proj-details-parallax {
+  background-image: url("https://images.pexels.com/photos/4622976/pexels-photo-4622976.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+  min-height: 250px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .proj-details-result {
-  min-height: 300px;
+  min-height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.proj-view-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
+}
+
+.proj-view-container img {
+  display: block;
+  background-color: pink;
+  width: 100%;
 }
 
 .about-title {
