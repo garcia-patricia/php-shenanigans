@@ -22,6 +22,17 @@
 
 </div>    
 
+<!-- dynamic styling -->
+<style scoped>
+.on-the-fly-behavior {
+    background-image: url('particular_ad.png'); 
+}
+@media (max-width: 300px) {
+    .on-the-fly-behavior {
+        background-image: url('particular_ad_small.png');
+    }
+}
+</style>
 
 
 <!-- modal -->
