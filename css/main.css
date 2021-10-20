@@ -810,7 +810,7 @@ h1 {
 .about-photo {
   display: flex;
   display: flex;
-  width: 50%;
+  width: 100%;
   margin: 5% auto;
 }
 
@@ -899,6 +899,7 @@ body {
   line-height: 25px;
   letter-spacing: 0.5px;
   color: #0e1228;
+  background-color: purple;
   font-weight: 400;
   background-color: #f3f3f3;
   transition: opacity 2s;
